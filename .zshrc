@@ -123,3 +123,4 @@ function nvims() {
 }
 
 bindkey -s ^z "nvims\n"
+alias ls="lsd"
