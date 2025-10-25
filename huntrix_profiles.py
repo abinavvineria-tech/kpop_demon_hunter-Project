@@ -38,7 +38,7 @@ HUNTRIX_MEMBERS = [
         "name": "Mira (미라)",
         "color": Colors.PINK,
         "position": "Main Dancer, Vocalist, Choreographer",
-        "age": 23,
+        "age": 24,
         "ability": "Spear Combat & Hand-to-Hand Combat",
         "weapon": "Woldo (Korean Halberd)",
         "facts": [
