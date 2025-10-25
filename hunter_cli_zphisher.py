@@ -1,4 +1,4 @@
-# import click
+import click
 import time
 import sys
 
@@ -62,4 +62,4 @@ def create_hunter_profile(name, age, country):
 
 
 if __name__ == "__main__":
-    create_hunter_profile()]
+    create_hunter_profile()
