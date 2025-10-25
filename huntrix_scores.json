@@ -1,0 +1,78 @@
+{
+    "high_scores": [
+        {
+            "player_name": "abinav",
+            "member": "Mira",
+            "correct_age": 23,
+            "attempts_used": 2,
+            "guesses": [
+                24,
+                23
+            ],
+            "result": "win",
+            "date": "2025-10-25 18:56:59"
+        },
+        {
+            "player_name": "abinav",
+            "member": "Mira",
+            "correct_age": 23,
+            "attempts_used": 3,
+            "guesses": [
+                14,
+                24,
+                23
+            ],
+            "result": "win",
+            "date": "2025-10-25 18:57:21"
+        },
+        {
+            "player_name": "abinav",
+            "member": "Zoey",
+            "correct_age": 22,
+            "attempts_used": 1,
+            "guesses": [
+                22
+            ],
+            "result": "win",
+            "date": "2025-10-25 18:59:42"
+        }
+    ],
+    "game_history": [
+        {
+            "player_name": "abinav",
+            "member": "Mira",
+            "correct_age": 23,
+            "attempts_used": 2,
+            "guesses": [
+                24,
+                23
+            ],
+            "result": "win",
+            "date": "2025-10-25 18:56:59"
+        },
+        {
+            "player_name": "abinav",
+            "member": "Mira",
+            "correct_age": 23,
+            "attempts_used": 3,
+            "guesses": [
+                14,
+                24,
+                23
+            ],
+            "result": "win",
+            "date": "2025-10-25 18:57:21"
+        },
+        {
+            "player_name": "abinav",
+            "member": "Zoey",
+            "correct_age": 22,
+            "attempts_used": 1,
+            "guesses": [
+                22
+            ],
+            "result": "win",
+            "date": "2025-10-25 18:59:42"
+        }
+    ]
+}
