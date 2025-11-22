@@ -1,0 +1,2 @@
+PLL1: R U' R U R U R U' R' U' R2
+PLL2: x R' U R' D2 R U' R' D2 R2 x'
