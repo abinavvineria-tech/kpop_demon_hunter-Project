@@ -3,7 +3,7 @@
 # Ensure dialog is installed
 if ! command -v dialog &>/dev/null; then
   echo "dialog is not installed. Installing..."
-  sudo apt install -y dialog
+  pkg install -y dialog
 fi
 
 # Main menu function
@@ -113,20 +113,26 @@ install_tools() {
     dialog --msgbox "Cancelled." 6 40
     return
   fi
-  sudo apt install -y "$tool"
-  dialog --msgbox "$tool installed successfully!" 6 40
+  dialog --msgbox "Installing $tool..." 6 40
+  output=$(pkg install -y "$tool" 2>&1)
+  dialog --msgbox "Install output:
+$output" 15 60
 }
 
 # Update System function
 update_system() {
-  sudo apt update
-  dialog --msgbox "System updated!" 6 40
+  dialog --msgbox "Updating package list..." 6 40
+  output=$(pkg update 2>&1)
+  dialog --msgbox "Update output:
+$output" 15 60
 }
 
 # Upgrade System function
 upgrade_system() {
-  sudo apt upgrade -y
-  dialog --msgbox "System upgraded!" 6 40
+  dialog --msgbox "Upgrading system..." 6 40
+  output=$(pkg upgrade -y 2>&1)
+  dialog --msgbox "Upgrade output:
+$output" 15 60
 }
 
 # Start the main menu
