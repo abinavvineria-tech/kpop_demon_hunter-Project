@@ -47,15 +47,15 @@ main_menu() {
   while true; do
     choice=$(dialog --clear --backtitle "Huntrix Multi-Tool v2 [$ENV]" \
       --title "Main Menu" \
-      --menu "Choose an option:" 20 60 10 \
-      1 "Update Repos" \
-      2 "Install Tools" \
-      3 "Sign Up on Groups (KPDH)" \
-      4 "Sign In on Groups (KPDH)" \
-      5 "Change Password (KPDH Groups)" \
-      6 "Set Notification (ntfy)" \
-      7 "Add Task (Taskwarrior)" \
-      8 "Set Task Due Date (Taskwarrior)" \
+      --menu "Choose an option:" 20 70 10 \
+      1 "Update Repos [pkg update / apt update]" \
+      2 "Install Tools [pkg install / apt install]" \
+      3 "Sign Up on Groups (KPDH) [echo | sha256sum]" \
+      4 "Sign In on Groups (KPDH) [grep]" \
+      5 "Change Password (KPDH) [sed -i]" \
+      6 "Set Notification (ntfy) [curl ntfy.sh]" \
+      7 "Add Task (Taskwarrior) [task add]" \
+      8 "Set Task Due Date (Taskwarrior) [task modify]" \
       9 "Exit" \
       2>&1 >/dev/tty)
 
