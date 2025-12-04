@@ -19,7 +19,7 @@ pkg update && pkg upgrade -y
 pkg install python git -y
 
 # Clone the repository
-git clone https://github.com/YOUR_USERNAME/kpop_demon_hunter-Project.git
+git clone https://github.com/abinavvineria-tech/kpop_demon_hunter-Project.git
 cd kpop_demon_hunter-Project
 
 # Install Python dependencies
@@ -39,7 +39,7 @@ sudo apt update && sudo apt upgrade -y
 sudo apt install python3 python3-pip git -y
 
 # Clone the repository
-git clone https://github.com/YOUR_USERNAME/kpop_demon_hunter-Project.git
+git clone https://github.com/abinavvineria-tech/kpop_demon_hunter-Project.git
 cd kpop_demon_hunter-Project
 
 # Install Python dependencies
@@ -56,7 +56,7 @@ sudo dnf update -y
 sudo dnf install python3 python3-pip git -y
 
 # Clone the repository
-git clone https://github.com/YOUR_USERNAME/kpop_demon_hunter-Project.git
+git clone https://github.com/abinavvineria-tech/kpop_demon_hunter-Project.git
 cd kpop_demon_hunter-Project
 
 # Install Python dependencies
@@ -73,7 +73,7 @@ sudo pacman -Syu
 sudo pacman -S python python-pip git
 
 # Clone the repository
-git clone https://github.com/YOUR_USERNAME/kpop_demon_hunter-Project.git
+git clone https://github.com/abinavvineria-tech/kpop_demon_hunter-Project.git
 cd kpop_demon_hunter-Project
 
 # Install Python dependencies
@@ -90,7 +90,7 @@ pip install -r requirement.txt
 brew install python git
 
 # Clone the repository
-git clone https://github.com/YOUR_USERNAME/kpop_demon_hunter-Project.git
+git clone https://github.com/abinavvineria-tech/kpop_demon_hunter-Project.git
 cd kpop_demon_hunter-Project
 
 # Install Python dependencies
@@ -104,7 +104,7 @@ pip3 install -r requirement.txt
 2. Download and install [Python](https://www.python.org/downloads/windows/) (check "Add Python to PATH")
 3. Open Git Bash and run:
 ```bash
-git clone https://github.com/YOUR_USERNAME/kpop_demon_hunter-Project.git
+git clone https://github.com/abinavvineria-tech/kpop_demon_hunter-Project.git
 cd kpop_demon_hunter-Project
 pip install -r requirement.txt
 ```
@@ -113,7 +113,7 @@ pip install -r requirement.txt
 ```powershell
 # Install Python from Microsoft Store or python.org
 # Then run:
-git clone https://github.com/YOUR_USERNAME/kpop_demon_hunter-Project.git
+git clone https://github.com/abinavvineria-tech/kpop_demon_hunter-Project.git
 cd kpop_demon_hunter-Project
 pip install -r requirement.txt
 ```
@@ -126,7 +126,7 @@ wsl --install
 # After restart, open Ubuntu terminal and run:
 sudo apt update && sudo apt upgrade -y
 sudo apt install python3 python3-pip git -y
-git clone https://github.com/YOUR_USERNAME/kpop_demon_hunter-Project.git
+git clone https://github.com/abinavvineria-tech/kpop_demon_hunter-Project.git
 cd kpop_demon_hunter-Project
 pip3 install -r requirement.txt
 ```
@@ -137,7 +137,7 @@ pip3 install -r requirement.txt
 2. Download and install [Git for Windows](https://git-scm.com/download/win)
 3. Open Command Prompt or Git Bash:
 ```cmd
-git clone https://github.com/YOUR_USERNAME/kpop_demon_hunter-Project.git
+git clone https://github.com/abinavvineria-tech/kpop_demon_hunter-Project.git
 cd kpop_demon_hunter-Project
 pip install -r requirement.txt
 ```
@@ -148,7 +148,7 @@ pip install -r requirement.txt
 2. Download and install [Git for Windows](https://git-scm.com/download/win)
 3. Open Command Prompt or Git Bash:
 ```cmd
-git clone https://github.com/YOUR_USERNAME/kpop_demon_hunter-Project.git
+git clone https://github.com/abinavvineria-tech/kpop_demon_hunter-Project.git
 cd kpop_demon_hunter-Project
 pip install -r requirement.txt
 ```
@@ -161,7 +161,7 @@ pip install -r requirement.txt
 2. Download [Git for Windows (older version)](https://github.com/git-for-windows/git/releases/tag/v2.10.0.windows.1)
 3. Open Command Prompt:
 ```cmd
-git clone https://github.com/YOUR_USERNAME/kpop_demon_hunter-Project.git
+git clone https://github.com/abinavvineria-tech/kpop_demon_hunter-Project.git
 cd kpop_demon_hunter-Project
 pip install rich
 ```
