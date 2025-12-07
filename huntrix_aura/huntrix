@@ -1,0 +1,74 @@
+#!/bin/bash
+# Huntrix Aura System v1.2
+# Adds Coding Aura (+30) and Mystical Combo Aura (+50)
+
+STATE_DIR="$HOME/.huntrix"
+STATE_FILE="$STATE_DIR/aura.state"
+
+mkdir -p "$STATE_DIR"
+touch "$STATE_FILE"
+
+# Initialize aura if empty
+if ! grep -q "AURA=" "$STATE_FILE"; then
+  echo "AURA=0" >"$STATE_FILE"
+fi
+
+load_aura() {
+  source "$STATE_FILE"
+}
+
+save_aura() {
+  echo "AURA=$AURA" >"$STATE_FILE"
+}
+
+add_aura() {
+  local points=$1
+  load_aura
+  AURA=$((AURA + points))
+  save_aura
+  echo "✨ Aura increased by $points! Total: $AURA"
+}
+
+menu() {
+  while true; do
+    choice=$(dialog --clear --stdout \
+      --title "Huntrix Aura System" \
+      --menu "Choose your ritual:" 20 60 8 \
+      1 "Blessing (+5 aura)" \
+      2 "Daily Ritual (+10 aura)" \
+      3 "Cubing Session (+15 aura)" \
+      4 "Coding Quest (+20 aura)" \
+      5 "Coding Aura (+30 aura)" \
+      6 "Fandom Chant (+25 aura)" \
+      7 "Mystical Combo Aura (Cubing + Chant = +50 aura)" \
+      8 "Check Aura Status" \
+      9 "Exit")
+
+    case $choice in
+    1) add_aura 5 ;;
+    2) add_aura 10 ;;
+    3) add_aura 15 ;;
+    4) add_aura 20 ;;
+    5)
+      add_aura 30
+      dialog --msgbox "💻 Coding Aura activated! Huntrix resonates with your code." 8 50
+      ;;
+    6) add_aura 25 ;;
+    7)
+      add_aura 50
+      dialog --msgbox "🌌 Mystical Combo Aura unleashed! Huntrix glows brighter than ever." 8 50
+      ;;
+    8)
+      load_aura
+      dialog --msgbox "🌌 Current Aura: $AURA" 8 40
+      ;;
+    9)
+      clear
+      echo "Huntrix blesses you! Goodbye."
+      exit 0
+      ;;
+    esac
+  done
+}
+
+menu
