@@ -213,6 +213,33 @@ search_package() {
     fi
 }
 
+# Project Setup
+setup_project() {
+    show_banner
+    echo -e "${BLUE}=== Project Setup (Kpop Demon Hunter) ===${NC}\n"
+    echo "This will install Python, Git, and project dependencies."
+    echo ""
+    read -p "Press Enter to continue or Ctrl+C to cancel..."
+    
+    install_pkg "python"
+    install_pkg "git"
+    
+    echo -e "${YELLOW}[*] Installing Python dependencies...${NC}"
+    
+    # Check for requirement.txt in current or parent directory
+    if [ -f "requirement.txt" ]; then
+        pip install -r requirement.txt
+    elif [ -f "../requirement.txt" ]; then
+        pip install -r ../requirement.txt
+    else
+        echo -e "${RED}[!] requirement.txt not found! Installing 'rich' manually...${NC}"
+        pip install rich
+    fi
+    
+    echo -e "${GREEN}[✓] Project setup complete!${NC}"
+    sleep 2
+}
+
 # Main Menu
 main_menu() {
     while true; do
@@ -225,6 +252,7 @@ main_menu() {
         echo "5) Security Tools"
         echo "6) Custom Package Install"
         echo "7) Search Package"
+        echo "8) Setup Kpop Demon Hunter (Install Deps)"
         echo "0) Exit"
         echo ""
         read -p "Select option: " choice
@@ -237,6 +265,7 @@ main_menu() {
             5) install_sec_tools ;;
             6) custom_install ;;
             7) search_package ;;
+            8) setup_project ;;
             0) 
                 echo -e "${GREEN}Goodbye!${NC}"
                 exit 0

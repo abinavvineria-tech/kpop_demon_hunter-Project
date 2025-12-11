@@ -26,7 +26,8 @@ cd kpop_demon_hunter-Project
 pip install -r requirement.txt
 
 # (Optional) Run the Termux installer for additional tools
-bash termux-installer.sh
+chmod +x termux_installer/termux-installer.sh
+bash termux_installer/termux-installer.sh
 ```
 
 ### Linux (Debian/Ubuntu)
