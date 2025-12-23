@@ -70,3 +70,23 @@ if i != "no":
 else:
     print("wrong answer")
 print(a, b, c, d, e, f, g, h, i)
+# infomation abiut my favorite kpop idol huntrix from kpop demon hunters
+# hunrtix kpop demon hunters forever
+# because huntrix is love
+# becuase huntrix is life
+# because i never let go of huntrix and leave the squad
+# huntrix is the best ever
+# huntrix is the queen of kpop demon hunters
+# becuase net worth net worth is 1.6 billion dollars in rupees inr 130000000000 (1.3 lakh crore)
+# i am leaving chennai for the school holidays and i love huntrix forever
+# huntrix is the best kpop idol ever
+# i love huntrix more than anything else in the world
+# more the spring more the summer more the autumn more the winter
+# i love  than the youtuber called "sprunki friends"
+# in the sequel of kpop demon hunters huntrix will be the main protagonist
+# called kpop demon hunters 2
+# releasing on 2029
+# and huntrix will be the main lead
+# everyone loves huntrix
+# in india huntrix is the most loved kpop idol
+# in all of asia huntrix is the most loved kpop idol
