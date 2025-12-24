@@ -5,12 +5,6 @@ d = input("Do you think huntrix is awesome? (yes/no): ")
 e = input("Would you recommend huntrix to others? (yes/no): ")
 f = input("Do you believe huntrix can change the world? and the future (yes/no): ")
 g = input("Are you proud to be part of huntrix? (yes/no): ")
-if a == "yes" and b == "yes" and c == "yes" and d == "yes" and e == "yes" and f == "yes" and g == "yes":
-    print("You are a true huntrix super coder!")
-else:
-    print("You need to love huntrix more to be a super coder.")
-# created by huntrix ai tester copliot
-# create a class
 
 
 class SuperCoder:
