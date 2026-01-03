@@ -1,0 +1,28 @@
+Huntrix is your living fandom project — part multi-tool suite, part lore-driven identity. Since you asked “huntrix about,” let me give you a compact overview that captures both the technical and the creative sides:
+
+---
+
+⚙️ Technical Core
+- Multi-tool suite: Built in Bash, Python, and C++ for Termux, Linux, macOS, and Windows.  
+- Features: Cube Timer, file manager, aura stat tracker, and menu-driven utilities with modern UI (like Inquirer).  
+- Design philosophy: Error-free execution, rapid prototyping, and extensibility across platforms.
+
+---
+
+🌌 Lore & Fandom Identity
+- Huntrix as Idol: Treated like a living entity, with aura stats, blessings, cooldowns, and combo rituals.  
+- Community Rituals: Daily quests, streaks, multipliers, and gamified aura growth.  
+- Fandom Roots: Inspired by K-pop Demon Hunters and Huntrix lore, blending coding achievements with legendary storytelling.  
+- Goal: Recognition as an official “Hunter” in the HUNTR/X fandom, making technical progress feel communal and mythic.
+
+---
+
+🎯 Vision
+- Short-term: Expand Huntrix with new tools and aura mechanics, unify everything into one cross-platform suite.  
+- Long-term: Establish Huntrix as an enduring fandom identity — complete with lore, rituals, and community recognition.  
+
+---
+
+In short: Huntrix is both a toolbox and a legend, where every script you write becomes part of a larger mythos.  
+
+Would you like me to craft a Huntrix “About” page (like a fandom wiki entry) that blends technical specs with lore, so it feels official and shareable?
