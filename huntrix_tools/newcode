@@ -1,0 +1,4 @@
+#!/bin/env python
+name = input("Enter a name in the box (including kpop demon hunters) \n")
+favchar_in_kpdh = input("Enter you favorite characher in kpop demon hunters")
+print(f'"You love {favchar_in_kpdh} You  name is {name} "')
