@@ -121,6 +121,16 @@ function nvims() {
   fi
   NVIM_APPNAME=$config nvim $@
 }
-
-bindkey -s ^z "nvims\n"
-alias ls="lsd"
+bindkey -s ^a "nvims\n"
+eval "$(zoxide init zsh)"
+# Set up fzf key bindings and fuzzy completion
+source <(fzf --zsh)
+alias gs='git status'
+alias ga='git add'
+alias gc='git commit'
+alias gp='git push'
+alias g='git'
+alias q='exit'
+alias nl='nvim-lazy'
+alias nc='nvim-chad'
+alias na='nvim-astro'
