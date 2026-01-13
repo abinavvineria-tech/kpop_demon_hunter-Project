@@ -219,7 +219,7 @@ To publish the KPop Demon Hunters website to GitHub Pages:
 4. Under "Source", select "Deploy from a branch"
 5. Select the branch (usually main) and save
 6. Your website will be available at `https://[username].github.io/kpop_demon_hunter-Project/kpop_demon_hunters_website.html`
-7. the file is in ~/kpop_demon_hunter-Project/skywork_ai_code/kpop_demon_hunters_fi_1.html
+7. the file is in ~/kpop_demon_hunter-Project/skywork_ai_code/kpop_demon_hunters_fi_1.html ( you can copy it)
 
 ## License
 
