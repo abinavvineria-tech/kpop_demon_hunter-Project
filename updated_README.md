@@ -195,6 +195,31 @@ bash cube-timer.sh
 bash typing_test.sh
 ```
 
+## KPop Demon Hunters Website
+
+This repository also includes a fan website for KPop Demon Hunters. To view the website:
+
+1. Locate the `kpop_demon_hunters_website.html` file in the repository
+2. Double-click the file to open it in your default web browser
+3. Alternatively, you can open it with any web browser by right-clicking and selecting "Open with"
+
+The website features:
+- Character profiles for Huntrix (Rumi, Mira, Zoey) and Saja Boys (Jinu, Baby Saja, Mystery Saja, Romance Saja, Abby Saja)
+- Plot summary of the KPop Demon Hunters story
+- Success metrics and awards information
+- Games and merchandise sections
+
+## Publishing to GitHub Pages
+
+To publish the KPop Demon Hunters website to GitHub Pages:
+
+1. Push the `kpop_demon_hunters_website.html` file to your repository
+2. Go to your repository settings on GitHub
+3. Scroll down to the "Pages" section
+4. Under "Source", select "Deploy from a branch"
+5. Select the branch (usually main) and save
+6. Your website will be available at `https://[username].github.io/kpop_demon_hunter-Project/kpop_demon_hunters_website.html`
+
 ## License
 
 This project is open source.
