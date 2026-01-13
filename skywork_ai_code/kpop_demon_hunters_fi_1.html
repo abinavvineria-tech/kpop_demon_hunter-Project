@@ -1,0 +1,469 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>KPop Demon Hunters - Ultimate Fan Experience</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        primary: '#8A2BE2',
+                        secondary: '#FF1493',
+                        accent: '#00BFFF',
+                        dark: '#1a1a2e',
+                        light: '#f8f9fa'
+                    }
+                }
+            }
+        }
+    </script>
+    <style>
+        body {
+            font-family: 'Poppins', sans-serif;
+            background-color: #0f0c29;
+            background-image: linear-gradient(315deg, #0f0c29 0%, #302b63 50%, #24243e 100%);
+            color: #fff;
+            scroll-behavior: smooth;
+        }
+        .gradient-bg {
+            background: linear-gradient(45deg, #8A2BE2, #FF1493, #00BFFF);
+        }
+        .character-card {
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+        }
+        .character-card:hover {
+            transform: translateY(-10px);
+            box-shadow: 0 10px 25px rgba(138, 43, 226, 0.5);
+        }
+        .section-title {
+            position: relative;
+            display: inline-block;
+            margin-bottom: 2rem;
+        }
+        .section-title::after {
+            content: '';
+            position: absolute;
+            bottom: -10px;
+            left: 0;
+            width: 100%;
+            height: 4px;
+            background: linear-gradient(90deg, #8A2BE2, #FF1493);
+            border-radius: 2px;
+        }
+        .nav-link {
+            position: relative;
+        }
+        .nav-link::after {
+            content: '';
+            position: absolute;
+            bottom: -5px;
+            left: 0;
+            width: 0;
+            height: 2px;
+            background: linear-gradient(90deg, #8A2BE2, #FF1493);
+            transition: width 0.3s ease;
+        }
+        .nav-link:hover::after {
+            width: 100%;
+        }
+        .achievement-card {
+            background: rgba(255, 255, 255, 0.1);
+            backdrop-filter: blur(10px);
+            border: 1px solid rgba(255, 255, 255, 0.2);
+        }
+    </style>
+</head>
+<body>
+    <!-- Header -->
+    <header class="py-6 px-4 md:px-8 sticky top-0 z-50 bg-dark bg-opacity-90 backdrop-blur-md">
+        <div class="container mx-auto flex flex-col md:flex-row justify-between items-center">
+            <div class="flex items-center mb-4 md:mb-0">
+                <div class="w-12 h-12 rounded-full gradient-bg flex items-center justify-center mr-3">
+                    <i class="fas fa-moon text-white text-xl"></i>
+                </div>
+                <h1 class="text-2xl md:text-3xl font-bold bg-clip-text text-transparent bg-gradient-to-r from-purple-400 to-pink-600">
+                    KPop Demon Hunters
+                </h1>
+            </div>
+            
+            <nav class="w-full md:w-auto">
+                <ul class="flex flex-wrap justify-center space-x-1 md:space-x-8">
+                    <li><a href="#home" class="nav-link py-2 px-3 text-lg hover:text-secondary transition">Home</a></li>
+                    <li><a href="#plot" class="nav-link py-2 px-3 text-lg hover:text-secondary transition">Plot</a></li>
+                    <li><a href="#characters" class="nav-link py-2 px-3 text-lg hover:text-secondary transition">Characters</a></li>
+                    <li><a href="#success" class="nav-link py-2 px-3 text-lg hover:text-secondary transition">Success</a></li>
+                    <li><a href="#games" class="nav-link py-2 px-3 text-lg hover:text-secondary transition">Games</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <!-- Hero Section -->
+    <section id="home" class="py-16 md:py-24 px-4">
+        <div class="container mx-auto flex flex-col md:flex-row items-center">
+            <div class="md:w-1/2 mb-10 md:mb-0">
+                <h1 class="text-4xl md:text-6xl font-bold mb-6 leading-tight">
+                    <span class="block">KPop Demon Hunters:</span>
+                    <span class="bg-clip-text text-transparent bg-gradient-to-r from-purple-400 to-pink-600">The Ultimate</span>
+                    <span class="bg-clip-text text-transparent bg-gradient-to-r from-pink-500 to-blue-500">Phenomenon</span>
+                </h1>
+                <p class="text-xl mb-8 text-gray-200 max-w-2xl">
+                    Experience the groundbreaking animated musical that revolutionized entertainment. 
+                    Follow Huntrix as they battle demons while rising to K-pop stardom in this record-breaking Netflix sensation.
+                </p>
+                <div class="flex flex-wrap gap-4">
+                    <button class="px-8 py-3 rounded-full font-semibold gradient-bg text-white shadow-lg hover:shadow-xl transition transform hover:-translate-y-1">
+                        Watch Now
+                    </button>
+                    <button class="px-8 py-3 rounded-full font-semibold bg-white bg-opacity-20 backdrop-blur-sm text-white border border-white border-opacity-30 hover:bg-opacity-30 transition">
+                        Listen to Soundtrack
+                    </button>
+                </div>
+            </div>
+            <div class="md:w-1/2 flex justify-center">
+                <div class="relative">
+                    <div class="w-64 h-64 md:w-80 md:h-80 rounded-full gradient-bg opacity-20 absolute -top-6 -left-6 animate-pulse"></div>
+                    <div class="w-64 h-64 md:w-80 md:h-80 rounded-full gradient-bg opacity-20 absolute -bottom-6 -right-6 animate-pulse"></div>
+                    <div class="relative w-64 h-64 md:w-80 md:h-80 rounded-2xl overflow-hidden border-4 border-white border-opacity-20 shadow-2xl">
+                        <img src="https://people.com/thmb/PUNTlhjWqKPgMZyV70x7gRfwQ1Q=/4000x0/filters:no_upscale():max_bytes(150000):strip_icc():focal(951x189:953x191)/kpop-demon-hunters-netflix-main-071425-d70d30fb5f2644459f28baa2a44e5721.jpg" alt="KPop Demon Hunters" class="w-full h-full object-cover">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Plot Summary -->
+    <section id="plot" class="py-16 px-4 bg-dark bg-opacity-50">
+        <div class="container mx-auto">
+            <h2 class="section-title text-3xl md:text-4xl font-bold mb-12 text-center">Plot Summary</h2>
+            <div class="max-w-4xl mx-auto bg-black bg-opacity-30 rounded-2xl p-8 backdrop-blur-sm border border-white border-opacity-10">
+                <p class="text-lg mb-6 text-gray-200 leading-relaxed">
+                    KPop Demon Hunters follows the story of <strong>Huntrix</strong>, a K-pop girl group whose members lead double lives as demon hunters. 
+                    They use their music to reinforce the Honmoon barrier that keeps demons from entering the human world.
+                </p>
+                <p class="text-lg mb-6 text-gray-200 leading-relaxed">
+                    When a rival boy band called the <strong>Saja Boys</strong> emerges, Huntrix discovers that the members are actually demons in disguise 
+                    who seek to break the barrier and allow their demon king to enter the human realm. As the two groups clash in spectacular battles, 
+                    secrets are revealed that will change everything.
+                </p>
+                <p class="text-lg text-gray-200 leading-relaxed">
+                    Combining the vibrant world of K-pop with supernatural action, this animated musical explores themes of identity, friendship, 
+                    and the power of music to unite and protect.
+                </p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Characters Section -->
+    <section id="characters" class="py-16 px-4">
+        <div class="container mx-auto">
+            <h2 class="section-title text-3xl md:text-4xl font-bold mb-12 text-center">Main Characters</h2>
+            
+            <!-- Huntrix -->
+            <div class="mb-20">
+                <h3 class="text-2xl md:text-3xl font-bold mb-8 text-center text-purple-300">Huntrix</h3>
+                <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+                    <div class="achievement-card rounded-2xl p-6 text-center character-card">
+                        <div class="w-32 h-32 mx-auto rounded-full overflow-hidden border-4 border-purple-500 mb-6">
+                            <img src="https://people.com/thmb/PUNTlhjWqKPgMZyV70x7gRfwQ1Q=/4000x0/filters:no_upscale():max_bytes(150000):strip_icc():focal(951x189:953x191)/kpop-demon-hunters-netflix-main-071425-d70d30fb5f2644459f28baa2a44e5721.jpg" alt="Huntrix" class="w-full h-full object-cover">
+                        </div>
+                        <h4 class="text-xl font-bold mb-2">Rumi</h4>
+                        <p class="text-purple-300 mb-2">Lead Vocalist</p>
+                        <p class="text-gray-300 text-sm">Half demon, half human. The emotional heart of the group with powerful abilities.</p>
+                    </div>
+                    
+                    <div class="achievement-card rounded-2xl p-6 text-center character-card">
+                        <div class="w-32 h-32 mx-auto rounded-full overflow-hidden border-4 border-purple-500 mb-6">
+                            <img src="https://people.com/thmb/PUNTlhjWqKPgMZyV70x7gRfwQ1Q=/4000x0/filters:no_upscale():max_bytes(150000):strip_icc():focal(951x189:953x191)/kpop-demon-hunters-netflix-main-071425-d70d30fb5f2644459f28baa2a44e5721.jpg" alt="Huntrix" class="w-full h-full object-cover">
+                        </div>
+                        <h4 class="text-xl font-bold mb-2">Mira</h4>
+                        <p class="text-purple-300 mb-2">Main Dancer & Rapper</p>
+                        <p class="text-gray-300 text-sm">The fierce fighter of the group with unmatched combat skills and determination.</p>
+                    </div>
+                    
+                    <div class="achievement-card rounded-2xl p-6 text-center character-card">
+                        <div class="w-32 h-32 mx-auto rounded-full overflow-hidden border-4 border-purple-500 mb-6">
+                            <img src="https://people.com/thmb/PUNTlhjWqKPgMZyV70x7gRfwQ1Q=/4000x0/filters:no_upscale():max_bytes(150000):strip_icc():focal(951x189:953x191)/kpop-demon-hunters-netflix-main-071425-d70d30fb5f2644459f28baa2a44e5721.jpg" alt="Huntrix" class="w-full h-full object-cover">
+                        </div>
+                        <h4 class="text-xl font-bold mb-2">Zoey</h4>
+                        <p class="text-purple-300 mb-2">Center & Visual</p>
+                        <p class="text-gray-300 text-sm">The strategic mind of the team with exceptional leadership qualities and tactical prowess.</p>
+                    </div>
+                </div>
+            </div>
+            
+            <!-- Saja Boys -->
+            <div>
+                <h3 class="text-2xl md:text-3xl font-bold mb-8 text-center text-pink-300">Saja Boys</h3>
+                <div class="grid grid-cols-1 md:grid-cols-5 gap-6">
+                    <div class="achievement-card rounded-2xl p-6 text-center character-card">
+                        <div class="w-24 h-24 mx-auto rounded-full overflow-hidden border-4 border-pink-500 mb-4">
+                            <img src="https://static.wikia.nocookie.net/kpop-demon-hunters/images/4/47/Saja_boys_group_photo.jpg/revision/latest/scale-to-width-down/1200?cb=20251201161814" alt="Saja Boys" class="w-full h-full object-cover">
+                        </div>
+                        <h4 class="text-lg font-bold mb-1">Jinu</h4>
+                        <p class="text-pink-300 text-xs mb-2">Leader & Main Vocalist</p>
+                        <p class="text-gray-300 text-xs">Charismatic leader with hypnotic vocal abilities and manipulative powers.</p>
+                    </div>
+                    
+                    <div class="achievement-card rounded-2xl p-6 text-center character-card">
+                        <div class="w-24 h-24 mx-auto rounded-full overflow-hidden border-4 border-pink-500 mb-4">
+                            <img src="https://static.wikia.nocookie.net/kpop-demon-hunters/images/4/47/Saja_boys_group_photo.jpg/revision/latest/scale-to-width-down/1200?cb=20251201161814" alt="Saja Boys" class="w-full h-full object-cover">
+                        </div>
+                        <h4 class="text-lg font-bold mb-1">Baby Saja</h4>
+                        <p class="text-pink-300 text-xs mb-2">Main Dancer</p>
+                        <p class="text-gray-300 text-xs">Agile performer with deadly precision and acrobatic combat skills.</p>
+                    </div>
+                    
+                    <div class="achievement-card rounded-2xl p-6 text-center character-card">
+                        <div class="w-24 h-24 mx-auto rounded-full overflow-hidden border-4 border-pink-500 mb-4">
+                            <img src="https://static.wikia.nocookie.net/kpop-demon-hunters/images/4/47/Saja_boys_group_photo.jpg/revision/latest/scale-to-width-down/1200?cb=20251201161814" alt="Saja Boys" class="w-full h-full object-cover">
+                        </div>
+                        <h4 class="text-lg font-bold mb-1">Mystery Saja</h4>
+                        <p class="text-pink-300 text-xs mb-2">Rapper & Strategist</p>
+                        <p class="text-gray-300 text-xs">Mastermind behind the demon invasion plans with cryptic knowledge.</p>
+                    </div>
+                    
+                    <div class="achievement-card rounded-2xl p-6 text-center character-card">
+                        <div class="w-24 h-24 mx-auto rounded-full overflow-hidden border-4 border-pink-500 mb-4">
+                            <img src="https://static.wikia.nocookie.net/kpop-demon-hunters/images/4/47/Saja_boys_group_photo.jpg/revision/latest/scale-to-width-down/1200?cb=20251201161814" alt="Saja Boys" class="w-full h-full object-cover">
+                        </div>
+                        <h4 class="text-lg font-bold mb-1">Romance Saja</h4>
+                        <p class="text-pink-300 text-xs mb-2">Visual & Charm Specialist</p>
+                        <p class="text-gray-300 text-xs">Uses seductive powers to manipulate emotions and weaken opponents.</p>
+                    </div>
+                    
+                    <div class="achievement-card rounded-2xl p-6 text-center character-card">
+                        <div class="w-24 h-24 mx-auto rounded-full overflow-hidden border-4 border-pink-500 mb-4">
+                            <img src="https://static.wikia.nocookie.net/kpop-demon-hunters/images/4/47/Saja_boys_group_photo.jpg/revision/latest/scale-to-width-down/1200?cb=20251201161814" alt="Saja Boys" class="w-full h-full object-cover">
+                        </div>
+                        <h4 class="text-lg font-bold mb-1">Abby Saja</h4>
+                        <p class="text-pink-300 text-xs mb-2">Technical Expert</p>
+                        <p class="text-gray-300 text-xs">Tech genius who hacks systems and creates demonic gadgets.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Success Metrics -->
+    <section id="success" class="py-16 px-4 bg-dark bg-opacity-50">
+        <div class="container mx-auto">
+            <h2 class="section-title text-3xl md:text-4xl font-bold mb-12 text-center">Record-Breaking Success</h2>
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
+                <div class="achievement-card rounded-2xl p-8 text-center">
+                    <div class="w-16 h-16 rounded-full gradient-bg flex items-center justify-center mx-auto mb-6">
+                        <i class="fas fa-crown text-white text-2xl"></i>
+                    </div>
+                    <h3 class="text-3xl font-bold mb-2">500M+</h3>
+                    <p class="text-gray-300">Views on Netflix</p>
+                </div>
+                
+                <div class="achievement-card rounded-2xl p-8 text-center">
+                    <div class="w-16 h-16 rounded-full gradient-bg flex items-center justify-center mx-auto mb-6">
+                        <i class="fas fa-music text-white text-2xl"></i>
+                    </div>
+                    <h3 class="text-3xl font-bold mb-2">3B+</h3>
+                    <p class="text-gray-300">Global Streams</p>
+                </div>
+                
+                <div class="achievement-card rounded-2xl p-8 text-center">
+                    <div class="w-16 h-16 rounded-full gradient-bg flex items-center justify-center mx-auto mb-6">
+                        <i class="fas fa-chart-line text-white text-2xl"></i>
+                    </div>
+                    <h3 class="text-3xl font-bold mb-2">#1</h3>
+                    <p class="text-gray-300">Most Popular Netflix Film</p>
+                </div>
+                
+                <div class="achievement-card rounded-2xl p-8 text-center">
+                    <div class="w-16 h-16 rounded-full gradient-bg flex items-center justify-center mx-auto mb-6">
+                        <i class="fas fa-globe text-white text-2xl"></i>
+                    </div>
+                    <h3 class="text-3xl font-bold mb-2">Global</h3>
+                    <p class="text-gray-300">Cultural Phenomenon</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Awards Section -->
+    <section class="py-16 px-4">
+        <div class="container mx-auto">
+            <h2 class="section-title text-3xl md:text-4xl font-bold mb-12 text-center">Awards & Recognition</h2>
+            <div class="max-w-4xl mx-auto">
+                <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
+                    <div class="achievement-card rounded-2xl p-8">
+                        <div class="flex items-start">
+                            <div class="mr-4 text-yellow-400">
+                                <i class="fas fa-award text-3xl"></i>
+                            </div>
+                            <div>
+                                <h3 class="text-xl font-bold mb-2">Golden Globe Award</h3>
+                                <p class="text-gray-300">Best Animated Feature Film</p>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="achievement-card rounded-2xl p-8">
+                        <div class="flex items-start">
+                            <div class="mr-4 text-yellow-400">
+                                <i class="fas fa-award text-3xl"></i>
+                            </div>
+                            <div>
+                                <h3 class="text-xl font-bold mb-2">Critics' Choice Awards</h3>
+                                <p class="text-gray-300">Multiple Wins Including Best Song</p>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="achievement-card rounded-2xl p-8">
+                        <div class="flex items-start">
+                            <div class="mr-4 text-yellow-400">
+                                <i class="fas fa-award text-3xl"></i>
+                            </div>
+                            <div>
+                                <h3 class="text-xl font-bold mb-2">Annie Awards</h3>
+                                <p class="text-gray-300">10 Nominations</p>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="achievement-card rounded-2xl p-8">
+                        <div class="flex items-start">
+                            <div class="mr-4 text-yellow-400">
+                                <i class="fas fa-award text-3xl"></i>
+                            </div>
+                            <div>
+                                <h3 class="text-xl font-bold mb-2">Billboard Recognition</h3>
+                                <p class="text-gray-300">Multiple Songs in Top 10</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Games Section -->
+    <section id="games" class="py-16 px-4 bg-dark bg-opacity-50">
+        <div class="container mx-auto">
+            <h2 class="section-title text-3xl md:text-4xl font-bold mb-12 text-center">Interactive Experiences</h2>
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+                <div class="achievement-card rounded-2xl p-8 text-center">
+                    <div class="w-20 h-20 rounded-full gradient-bg flex items-center justify-center mx-auto mb-6">
+                        <i class="fas fa-mobile-alt text-white text-2xl"></i>
+                    </div>
+                    <h3 class="text-xl font-bold mb-3">Mobile Games</h3>
+                    <p class="text-gray-300 mb-4">Kpop Games Demon Hunter - Merge puzzle game where idols rise as legendary hunters</p>
+                    <button class="px-4 py-2 rounded-full text-sm font-semibold bg-white bg-opacity-20 hover:bg-opacity-30 transition">
+                        Learn More
+                    </button>
+                </div>
+                
+                <div class="achievement-card rounded-2xl p-8 text-center">
+                    <div class="w-20 h-20 rounded-full gradient-bg flex items-center justify-center mx-auto mb-6">
+                        <i class="fas fa-gamepad text-white text-2xl"></i>
+                    </div>
+                    <h3 class="text-xl font-bold mb-3">Fortnite Collaboration</h3>
+                    <p class="text-gray-300 mb-4">Special skins, items, and Demon Rush Limited-Time Event</p>
+                    <button class="px-4 py-2 rounded-full text-sm font-semibold bg-white bg-opacity-20 hover:bg-opacity-30 transition">
+                        Explore
+                    </button>
+                </div>
+                
+                <div class="achievement-card rounded-2xl p-8 text-center">
+                    <div class="w-20 h-20 rounded-full gradient-bg flex items-center justify-center mx-auto mb-6">
+                        <i class="fas fa-robot text-white text-2xl"></i>
+                    </div>
+                    <h3 class="text-xl font-bold mb-3">Roblox RPG</h3>
+                    <p class="text-gray-300 mb-4">Roleplay as your favorite Huntrix girls or Saja boys in magical worlds</p>
+                    <button class="px-4 py-2 rounded-full text-sm font-semibold bg-white bg-opacity-20 hover:bg-opacity-30 transition">
+                        Play Now
+                    </button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Merchandise Section -->
+    <section class="py-16 px-4">
+        <div class="container mx-auto">
+            <h2 class="section-title text-3xl md:text-4xl font-bold mb-12 text-center">Official Merchandise</h2>
+            <div class="max-w-5xl mx-auto">
+                <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
+                    <div class="achievement-card rounded-2xl p-8">
+                        <h3 class="text-2xl font-bold mb-4">Apparel</h3>
+                        <p class="text-gray-300 mb-4">Official t-shirts, hoodies, and crop tops featuring Huntrix and Saja Boys designs.</p>
+                        <ul class="list-disc pl-5 text-gray-300 space-y-2">
+                            <li>Purple-toned hoodies with signature logos</li>
+                            <li>Band t-shirts with character artwork</li>
+                            <li>Limited edition concert merchandise</li>
+                        </ul>
+                    </div>
+                    
+                    <div class="achievement-card rounded-2xl p-8">
+                        <h3 class="text-2xl font-bold mb-4">Collectibles</h3>
+                        <p class="text-gray-300 mb-4">Exclusive items for dedicated fans.</p>
+                        <ul class="list-disc pl-5 text-gray-300 space-y-2">
+                            <li>Light sticks with LED effects</li>
+                            <li>Posters and art prints</li>
+                            <li>Cardboard cutouts and standees</li>
+                            <li>Phone cases and accessories</li>
+                        </ul>
+                    </div>
+                </div>
+                
+                <div class="mt-12 text-center">
+                    <button class="px-8 py-4 rounded-full font-semibold gradient-bg text-white shadow-lg hover:shadow-xl transition transform hover:-translate-y-1 text-lg">
+                        Visit Official Store
+                    </button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="py-12 px-4 bg-dark border-t border-white border-opacity-10">
+        <div class="container mx-auto">
+            <div class="flex flex-col md:flex-row justify-between items-center">
+                <div class="mb-6 md:mb-0">
+                    <div class="flex items-center">
+                        <div class="w-10 h-10 rounded-full gradient-bg flex items-center justify-center mr-3">
+                            <i class="fas fa-moon text-white"></i>
+                        </div>
+                        <h2 class="text-xl font-bold bg-clip-text text-transparent bg-gradient-to-r from-purple-400 to-pink-600">
+                            KPop Demon Hunters
+                        </h2>
+                    </div>
+                    <p class="mt-4 text-gray-400 max-w-md">
+                        The ultimate destination for fans of the record-breaking animated musical phenomenon.
+                    </p>
+                </div>
+                
+                <div class="flex space-x-6">
+                    <a href="#" class="w-12 h-12 rounded-full bg-white bg-opacity-10 flex items-center justify-center hover:bg-opacity-20 transition">
+                        <i class="fab fa-twitter text-xl"></i>
+                    </a>
+                    <a href="#" class="w-12 h-12 rounded-full bg-white bg-opacity-10 flex items-center justify-center hover:bg-opacity-20 transition">
+                        <i class="fab fa-instagram text-xl"></i>
+                    </a>
+                    <a href="#" class="w-12 h-12 rounded-full bg-white bg-opacity-10 flex items-center justify-center hover:bg-opacity-20 transition">
+                        <i class="fab fa-youtube text-xl"></i>
+                    </a>
+                    <a href="#" class="w-12 h-12 rounded-full bg-white bg-opacity-10 flex items-center justify-center hover:bg-opacity-20 transition">
+                        <i class="fab fa-tiktok text-xl"></i>
+                    </a>
+                </div>
+            </div>
+            
+            <div class="border-t border-white border-opacity-10 mt-10 pt-8 text-center text-gray-500">
+                <p>© 2026 KPop Demon Hunters. All rights reserved. This is a fan site and not affiliated with Netflix or Sony Pictures Animation.</p>
+            </div>
+        </div>
+    </footer>
+</body>
+</html>
