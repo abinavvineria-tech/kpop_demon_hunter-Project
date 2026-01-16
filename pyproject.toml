@@ -11,4 +11,5 @@ dependencies = [
 [tool.uv.workspace]
 members = [
     "Projects",
+    "test_Projects",
 ]
