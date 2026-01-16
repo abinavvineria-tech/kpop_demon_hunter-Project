@@ -1,0 +1,37 @@
+{
+    "Rumi": {
+        "aura": 50,
+        "luck": 30,
+        "power": 40,
+        "level": 2,
+        "xp": 120
+    },
+    "Mira": {
+        "aura": 40,
+        "luck": 50,
+        "power": 35,
+        "level": 2,
+        "xp": 130
+    },
+    "Zoey": {
+        "aura": 45,
+        "luck": 40,
+        "power": 45,
+        "level": 2,
+        "xp": 140
+    },
+    "Abinav": {
+        "aura": 35,
+        "luck": 35,
+        "power": 30,
+        "level": 1,
+        "xp": 50
+    },
+    "abinav": {
+        "aura": 10,
+        "luck": 32,
+        "power": 15,
+        "level": 1,
+        "xp": 70
+    }
+}
