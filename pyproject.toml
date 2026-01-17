@@ -13,4 +13,5 @@ members = [
     "Projects",
     "test_Projects",
     "huntrix_tools",
+    "newProjects",
 ]
