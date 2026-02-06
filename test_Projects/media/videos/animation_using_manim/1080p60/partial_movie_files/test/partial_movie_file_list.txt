@@ -1,0 +1,2 @@
+# This file is used internally by FFMPEG.
+file 'file:/data/data/com.termux/files/home/test_Projects/media/videos/animation_using_manim/1080p60/partial_movie_files/test/3544663784_1432596116_616520841.mp4'
